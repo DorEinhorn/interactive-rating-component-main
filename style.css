@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root{
+--Orange: hsl(25, 97%, 53%);
+--White: hsl(0, 0%, 100%);
+--Light-Grey: hsl(217, 12%, 63%);
+--Medium-Grey: hsl(216, 12%, 54%);
+--Dark-Blue: hsl(213, 19%, 18%);
+--Very-Dark-Blue: hsl(216, 12%, 8%);
+--bg-container: hsl(213,20%,18%);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-size: 15px;
+    font-family: 'Overpass', sans-serif;
+    background-color: var(--Very-Dark-Blue);
+    color: var(--White);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container{
+    background-color: var(--bg-container);
+    border-radius: 10px;
+    max-width: 400px;
+    height: 400px;
+}
+.box-1{
+    margin-left: 1.5rem;
+}
+
+.d-none{
+    display: none;
+}
+
+.logo-star{
+    background-color: #3a4655;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem;
+}
+.box-1>h2{
+color: var(--White);
+padding-bottom: 1rem;
+}
+
+.box-1-info{
+    color: var(--Light-Grey);
+    line-height: 22px;
+    max-width: 90%;
+}
+
+.buttons{
+    display: flex;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.buttons>button{
+    font-size: 1.2rem;
+    width: 70px;
+    height: 50px;
+    margin-right: 1.22rem;
+    border: none;
+    background: #3a4655;
+    color: #959eac;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.buttons button:hover {
+    background: var(--Medium-Grey);
+  }
+  
+ .buttons button.selected {
+    background: var(--Orange);
+    color: var(--White);
+  }
+  
+ .buttons button.error {
+    border: 1px solid red;
+  }
+.submit-btn{
+    background-color: var(--Orange);
+    color: var(--White);
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    border: none;
+    border-radius: 30px;
+    width: 95%;
+    height: 3rem;
+    margin-top: 2rem;
+}
+
+.submit-btn:hover{
+    background-color: var(--White);
+    color: var(--Orange);
+    cursor: pointer;
+}
+
+.error-msg{
+text-align: center;
+color: red;
+}
+
+.box-2{
+    text-align: center;
+}
+
+.thank-you{
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    
+}
+
+.selection-msg{
+    color: var(--Orange);
+    background: #3a4655;
+    padding: 10px 15px;
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 1.1rem;
+    border-radius: 50px;
+}
+
+.box-2 h2{
+    padding: 1rem;
+    font-size: 28px;
+}
+
+.box-2 p{
+    margin: 0 auto;
+    color: var(--Light-Grey);
+    line-height: 22px;
+    max-width: 90%;
+    margin-bottom: 1.6rem;
+}
